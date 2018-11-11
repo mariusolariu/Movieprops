@@ -1,0 +1,62 @@
+body {
+		background-image: url("images/milky_way_background.jpeg");
+		padding: 0;
+		margin: 5px;
+		z-index: 0;
+}
+
+canvas.canvasStyle{
+	width : 100%;
+	height : 35px;
+    border: 1px solid yellow;
+//	position: absolute;
+//	z-index: 1;
+}
+
+.text{
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+	border-right: 1px solid #bbb;
+}
+
+li:last-child{
+	border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active{
+	background-color: #339EFF;
+	color: white;
+}
+
+li a:hover{
+	background-color: #555;
+	color: white;
+}
