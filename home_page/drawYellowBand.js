@@ -2,10 +2,10 @@
 
 			function main(){
 				var context = document.getElementById("drawMottoBackground").getContext("2d");
-				var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-				var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-				document.getElementById("drawMottoBackground").style.width = "100%";
-				document.getElementById("drawMottoBackground").style.height = "5%";
+				var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) ;
+				var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) ;
+//				document.getElementById("drawMottoBackground").style.width = "50%";
+//				document.getElementById("drawMottoBackground").style.height = "5%";
 				
 				var gradient = context.createLinearGradient(0,0,0,125);
 				gradient.addColorStop(0, "yellow");
