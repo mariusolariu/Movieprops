@@ -10,8 +10,34 @@
 		<link rel = "stylesheet" href = "home_style.css">
 
 		<script src = "drawYellowBand.js"></script> 
-		<script src = "displayContent.js"></script>
+		<script src = "welcomeCanvas.js"></script>
+		
+		<!-- The three scripts below have been customized by me, original source: http://www.javascriptkit.com/script/script2/cubeslideshow.shtml --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="jkcubeslideshow.js"> </script>
+		<script>
 
+			var cubeshowvar1 // arbitrary but unique variable to store slideshow instance
+
+			jQuery(function($){
+				cubeshowvar1 = new jkcubeslideshow({
+				id: 'cubeshow1',
+				dimensions: [300, 375],
+				images: [
+									['images/posters/got.jpg', './../products/props.html'],
+									['images/posters/warcraft.jpg', './../products/props.html'],
+									['images/posters/gladiator.jpeg', './../products/props.html'],
+									['images/posters/star_wars.jpeg', './../products/props.html'],
+									['images/posters/avatar.jpeg', './../products/props.html'],
+									['images/posters/terminator.jpeg', './../products/props.html']
+								], 
+
+				pause: 1000
+				
+	})
+})
+
+</script>
 	</head>
 
 	<body> 
@@ -34,10 +60,24 @@
 			<li> <a href = "./../about_us/about_us.html">About Us</a> <li>
 		</ul>
 		
-		<!-- It doesn't display the div , look into the class example from ajax-->
-		<div id = "content" class = "contentStyle"> </div>	
+		<!--<p> &nbsp; </p> -->
 
+		<br/>
+		<!-- It doesn't display the div , look into the class example from ajax
+		
+		<div id = "content" class = "contentStyle"> 
+			<canvas id = "welcomeCanvas" width = "300" height = "400">		
+		</div>-->	
 
+		<div id = "wrapper2"> 
+				<div class="jkcubeslideshow" id="cubeshow1"> </div>
+				<div id = "right">
+
+				 <p style = "color:red;"> Why is this text appearing here? I want to make it appear on the right </p>
+				 </div>
+		</div>
+
+				 <p style = "color:red;"> This is some text </p>
 	</body>
 
 </html>

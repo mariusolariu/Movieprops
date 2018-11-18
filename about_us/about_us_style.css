@@ -1,5 +1,5 @@
 body {
-		background-image: url("images/milky_way_background.jpeg");
+		background-image: url("./../home_page/images/milky_way_background.jpeg");
 		padding: 0;
 		margin: 5px;
 		z-index: 0;
