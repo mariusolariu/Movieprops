@@ -8,6 +8,7 @@
 		<title>My Account</title>
 		<link rel = "stylesheet" href ="my_account_page_style.css"> </link>
 		<script src = "drawYellowBand.js"></script>
+		<script src = "displayTrivia.js"></script>	
 	</head>
 
 	<body>
@@ -30,9 +31,36 @@
 			<li> <a href = "./../about_us/about_us.html">About Us</a> <li>
 		</ul>
 		
-		<!--<p> &nbsp; </p> -->
-
 		<br/>
+
+			 <div class = "loginbox">
+				<img src="images/avatar_icon.png" class = "avatar">
+			
+				<br/>
+				<h1 class = "loginHeader"> Login </h1>
+	
+				<form>
+					<label>Username:
+						<input type = "text" name="" placeholder="Enter username...">
+					</label>				
+
+					<label>Password:
+						<input type="password" name="" placeholder="Enter password.." class = "passwordStyle">
+					</label>
+					<br/>
+
+					<input type="submit" value="Login" class = "submitStyle">
+
+					<br/>
+					<a href="#">Create new account</a>
+				</form>  
+			 </div>
+
+		<div id = "triviaDivId" class = "triviaDiv">
+				 <p style = "color:red;"> Did you know? </p>
+				 <p id = "triviaP"> </p>
+		</div>
+
 	</body>
 
 </html>

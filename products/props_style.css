@@ -86,8 +86,8 @@ li a:hover{
 }
 
 .bigDivContainer{
-	width: 60%;
-	height: 30%;
+//	width: 60%;
+//	height: 30%;
 	//border: 2px solid red;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -98,38 +98,42 @@ li a:hover{
 .box1{
 	width: 20%;
 	height: 250px;
-	background-color:rgb(88, 88, 88); 
+	background-color: rgba(0,0,0, 0.5);
 	float: left;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	margin-right: 5%;
+	border-radius:20px;
 }
 
 
 .box2{
 	width: 20%;
 	height: 250px;
-	background-color:rgb(88,88,88);
+	background-color: rgba(0,0,0, 0.5);
 	float: left;
 	margin-right:5%;
 	margin-top: 5%;
 	margin-bottom: 5%;
+	border-radius:20px;
 }
 
 .box3{
 	width: 20%;
 	height: 250px;
-	background-color: rgb(88,88,88);
+	background-color: rgba(0,0,0, 0.5);
 	float: left;
 	margin-right: 5%;
 	margin-top: 5%;
 	margin-bottom: 5%;
+	border-radius:20px;
 }
 
 .box4{
 	width: 20%;
 	height: 250px;
-	background-color: rgb(88,88,88);
+	border-radius:20px;
+	background-color: rgba(0,0,0, 0.5);
 	float: right;
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -147,6 +151,10 @@ li a:hover{
 	margin:0 auto;
 }
 
+.buttonStyle:hover{
+	background-color:#ffcc66;
+}
+
 .imgStyle{
 	width: 98%;
 	height: 50%;
@@ -158,3 +166,5 @@ li a:hover{
 	color: white;
 	font-weight: bold;
 }
+
+

@@ -8,11 +8,10 @@ philosophy. -->
 		<title>About us</title>
 		<link rel = "stylesheet" href = "about_us_style.css"> </link>
 		<script src = "drawYellowBand.js"></script>
+		<script src = "loadContent.js"></script>
 	</head>
 
 	<body>
-
-<!--		<p>&nbsp; </p> -->
 
 		<img class = "img" src = "./../home_page/images/logo.png" alt = "Logo Image"> 
 		<p>&nbsp; </p>
@@ -30,9 +29,41 @@ philosophy. -->
 			<li> <a href = "./../about_us/about_us.html" class="active">About Us</a> <li>
 		</ul>
 		
-		<!--<p> &nbsp; </p> -->
 
 		<br/>
+		
+		<div id = "contentDiv" class = "contentDivStyle">
+			
+			<!-- The contact page that is going to be displayed when pressing the bellow button
+				was taken from: https://colorlib.com/wp/template/contact-form-v15/ 
+			<input id = "contactUsB" type = "button" value = "Contact Us!" class = "buttonStyle">
+			-->
+
+
+			<h2 class = "textWelcome" > Welcome to movieprops.com, a UK based collection of genuine movie props </h2> 
+
+			<p class = "paragraphStyle"> Movieprops is one of the world’s leading vendors of original props, costumes and related production material as collectable memorabilia. </p>
+
+			<p class = "paragraphStyle">  Movieprops utilizes the network established through nineteen-years in business on two continents to source the most exciting pieces in the collecting hobby. Our inventory comes from film studios, production companies, wardrobe and prop suppliers, special effects houses, various other industry sources, as well as private collectors. </p>
+
+			<p class = "paragraphStyle">
+				Every item on our website has been researched as thoroughly as possible and has met our internal standards of authenticity. Our reputation is impeccable and not something we ever take for granted. All products sold by Prop Store are guaranteed for the life of the business. We never tire in researching the history of film props and costumes. Movieprops global network of industry professionals is unmatched and we often call on them to assist in researching our collections. Authenticity is everything. 
+			</p>
+
+			<p class = "paragraphStyle"> <strong> Was this piece really held by my favorite actor? </strong> </p>
+			
+			<p class = "paragraphStyle">
+				The filmmaking process requires that multiples be made of all principal props and costumes. This is standard practice for a variety of production and continuity reasons. First and foremost, filmmaking is an expensive process, and a production cannot risk unnecessary delays due to having the only version of a prop or costume damaged on set, so they will always have back-ups in place. Multiple versions may also be required for continuity purposes. For instance, a particular garment may need to be distressed as the story progresses. To that end, different versions of that garment will exist so that it can be filmed out of sequence and the story’s continuity will remain in-tact once the film is edited and put together.
+Props are frequently made in a variety of different versions. There is typically a hero or beauty prop for close up shots. These tend to be made of better materials, whereas lightweight versions will also be made for stunt and safety work that typically don’t need to hold up to close visual scrutiny. In other cases, props may need to have functionality to them. These special effects props can have moving parts (i.e., a retractable blade for a “stabbing” sword or knife) or even working lights.
+Different takes of the same scene may also utilize multiple different examples of a prop or costume, meaning a piece could have been shot but still not make it to the final cut.
+			</p>
+
+			<p style = "color:red; text-align:center; font-size: large;"> <strong>For more information do not hesitate to contact us! </strong>  </p>
+			<form action = "./ContactFrom/contact_us_main.html">
+				<input type = "submit" value = "Contact us!" class = "buttonStyle">
+			</form>	
+		<br/>
+		</div>
 	</body>
 
 </html>
