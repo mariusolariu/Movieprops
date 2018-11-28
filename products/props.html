@@ -7,16 +7,19 @@
 		<title>Props</title>
 		<link rel = "stylesheet" href = "props_style.css"> 
 		<script src = "drawYellowBand.js"></script>
-	
 	</head>
 
 	<body>
-
-		<img class = "img" src = "./../home_page/images/logo.png" alt = "Logo Image"> 
+		
+		<script src = "drawLogo.js"></script>
+		<div> 
+			<canvas id = "siteLogo" class = "siteLogoClass" height= "150%" width = "300%" style = "padding: 0; margin: auto; display: block; width: 200px;"></canvas>
+		</div>
+	
 		<p>&nbsp; </p>
 
 		<div id = "wrapper">
-			<canvas id = "drawMottoBackground" class = "canvasStyle"> 
+			<canvas id = "drawMottoBackground" class = "canvasStyle"> </canvas>
 		</div>
 
 		<h2 id= "h1" class = "text" > Bring movies to life! </h2>
@@ -35,27 +38,27 @@
 		<div class = "bigDivContainer">
 			
 			<div class = "box1">
-				<img src = "images/got_hound.jpg" class = "imgStyle" alt = "Got hound">
+				<img src = "images/got_hound.jpg" class = "imgStyle" alt = "Got hound" onclick="openModal();currentSlide(0)">
 			 	<h4 class = "headerStyle" > The hound toy  - £10 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(0);" class = "buttonStyle">
 			</div>
 			
 			<div class = "box2"> 
-				<img src = "images/got_badge.jpg" class = "imgStyle" alt = "Got badge">
+				<img src = "images/got_badge.jpg" class = "imgStyle" alt = "Got badge" onclick="openModal();currentSlide(1)">
 				<h4  class = "headerStyle" > Hand of the King Badge  - £30 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(1);" class = "buttonStyle">
 			</div>
 
 			<div class = "box3"> 
-				<img src = "images/hammer_warcraft.jpg" class = "imgStyle" alt = "hammer">
+				<img src = "images/hammer_warcraft.jpg" class = "imgStyle" alt = "hammer" onclick="openModal();currentSlide(2)">
 			 	<h4 class = "headerStyle" > The mighty hammer  - £50 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(2);" class = "buttonStyle">
 			</div>
 
 			<div class = "box4"> 
-				<img src = "images/sword_warcraft.jpg" class = "imgStyle" alt = "sword">
+				<img src = "images/sword_warcraft.jpg" class = "imgStyle" alt = "sword" onclick="openModal();currentSlide(3)">
 			 	<h4 class = "headerStyle" >Light's Vengeance sword - £100 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(3);" class = "buttonStyle">
 			</div>
 
 		</div>
@@ -63,58 +66,87 @@
 		<div class = "bigDivContainer">
 
 			<div class = "box1"> 
-				<img src = "images/gladiator_helmet.jpg" class = "imgStyle" alt = "gladiator helmet">
+				<img src = "images/gladiator_helmet.jpg" class = "imgStyle" alt = "gladiator helmet" onclick="openModal();currentSlide(4)">
 			 	<h4 class = "headerStyle" >Maximus' helmet  - £250 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(4);" class = "buttonStyle">
 			</div>
 
 			<div class = "box2"> 
-				<img src = "images/shoulder_armor_gladiator.jpg" class = "imgStyle" alt = "shoulder armor">
+				<img src = "images/shoulder_armor_gladiator.jpg" class = "imgStyle" alt = "shoulder armor" onclick="openModal();currentSlide(5)">
 			 	<h4 class = "headerStyle" >Shoulder armor gladiator - £85 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(5);" class = "buttonStyle">
 			</div>
 
 			<div class = "box3">
-				<img src = "images/blaster_starWars.jpeg" class = "imgStyle" alt = "blaster">
+				<img src = "images/blaster_starWars.jpeg" class = "imgStyle" alt = "blaster" onclick="openModal();currentSlide(6)">
 			 	<h4 class = "headerStyle" >Leia's blaster - £350 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(6);" class = "buttonStyle">
 			 </div>
 
 			<div class = "box4"> 
-				<img src = "images/strormtrooper_helmet.jpeg" class = "imgStyle" alt = "helmet">
+				<img src = "images/strormtrooper_helmet.jpeg" class = "imgStyle" alt = "helmet" onclick="openModal();currentSlide(7)">
 			 	<h4 class = "headerStyle" >Stormtrooper helmet - £150 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(7);" class = "buttonStyle">
 			</div>
 		</div>
 
 		<div class = "bigDivContainer">
 
 			<div class = "box1"> 
-				<img src = "images/navi_dagger_avatar.jpg" class = "imgStyle" alt = "dagger">
+				<img src = "images/navi_dagger_avatar.jpg" class = "imgStyle" alt = "dagger" onclick="openModal();currentSlide(8)">
 			 	<h4 class = "headerStyle" >Navi dagger avatar - £250 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(8);" class = "buttonStyle">
 			</div>
 
 			<div class = "box2"> 
-				<img src = "images/sn_9_wasp_avatar.jpg" class = "imgStyle" alt = "sn 9 wasp">
+				<img src = "images/sn_9_wasp_avatar.jpg" class = "imgStyle" alt = "sn 9 wasp" onclick="openModal();currentSlide(9)" >
 			 	<h4 class = "headerStyle" >Sn-9 wasp avatar - £350 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(9);" class = "buttonStyle">
 			</div>
 
 			<div class = "box3"> 
-				<img src = "images/grenade_bandolier_termin.jpg" class = "imgStyle" alt = "grenade bandolier">
+				<img src = "images/grenade_bandolier_termin.jpg" class = "imgStyle" alt = "grenade bandolier" onclick="openModal();currentSlide(10)">
 			 	<h4 class = "headerStyle" >Terminador grenade bandolier - £100 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(10);" class = "buttonStyle">
 			</div>
 
 			<div class = "box4"> 
-				<img src = "images/genisys_endoskeleton_termin.jpg" class = "imgStyle" alt = "Endoskeleton">
+				<img src = "images/genisys_endoskeleton_termin.jpg" class = "imgStyle" alt = "Endoskeleton" onclick="openModal();currentSlide(11)">
 			 	<h4 class = "headerStyle" >Terminator Genisys endoskeleton - £250 </h4>
-				<input type = "button" value = "Add to Cart" class = "buttonStyle">
+				<input type = "button" value = "More info" onclick="openInfoModal(11);" class = "buttonStyle">
 
 			</div>
 		</div>
 
+		<div id = "myModal" class = "modal">
+			<span class ="close cursor" onclick = "closeModal()">&times;</span>
+			<div class = "modal-content">
+
+				<div class = "mySlides" id = "mySlidesId">
+					<div class = "numbertext" id = "slideNumberDiv">  </div>
+					<img class = "imgs" id = "imgContainer" style = "width:100%">
+				</div>		
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(+1)">&#10095;</a>
+
+				<div class = "caption-container">
+					<p id = "caption"></p>
+				</div>
+			</div>
+
+		</div>
+
+		<div id = "moreInfoModal" class = "modal">
+			<span class ="close cursor" onclick = "closeInfoModal()">&times;</span>
+			<div id = "infoContent" class = "modal-content">
+			</div>
+
+		</div>
+
+		<script src = "lightBox.js"></script>
+		<script src = "displayMoreInfo.js"></script>
 
 	</body>
 

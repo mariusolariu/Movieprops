@@ -109,7 +109,7 @@ li a:hover{
 	background-color: #66ff99;
 }
 .textWelcome{
-	margin: 2%;
+	margin: 1em;
 	color: white;
 	text-align: center;
 	font-weight: bold;
@@ -118,6 +118,35 @@ li a:hover{
 .paragraphStyle{
 	color: white;
 	text-indent:2em;
-	margin: 2%;
+	margin: 0.9em 1em;
 	font-size: 110%;
+}
+
+.multicolumnDiv{
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 30px;
+		-moz-column-gap: 30px;
+		-o-column-gap: 30px;
+		column-gap: 30px;
+		-webkit-column-rule: 2px outset orange;
+		-moz-column-rule: 2px outset orange;
+		-o-column-rule: 2px outset orange;
+		column-rule: 2px outset orange;
+}
+
+#textSurvey{
+	margin-left: 2.3em;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+}
+
+#surveyUl{
+	padding: 3%;
+	margin: 3%;
+	background-color: rgba(0,0,0,0);
+	color: white;
 }

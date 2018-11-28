@@ -102,7 +102,8 @@ div.side1, div.side2 { /* two panels that make up cube effect */
 	height: 100%;
 	position: absolute;
 	-moz-box-sizing: border-box;
-	margin-left: 110%;
+	margin-left: 120%;
+	margin-right:100%;
 	box-sizing: border-box;
 	backface-visibility: hidden; /* hide backface of DIVs */
 	transition: all 1s ease-in-out; /* CSS transition. Actual duration set by script */;
@@ -129,9 +130,22 @@ div.side1 img, div.side2 img { /* how should slideshow images be sized inside pa
 .cubeshow1{
 	float:left;
 	border: 2px solid yellow;
+	margin-left:20%;
+	margin-right:60%;
 }
 
 .triviaDiv{
-	margin-left: 20%;
-	margin-right: 20%;
+	display:block;
+	position:relative;
+	transform: translate(0%, 450%);
+	width:60%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.5);
+	
+}
+
+.triviaParaStyle{
+	font-size: 2.5em;
+	font-weight:bold;
+	color:red;
 }

@@ -10,8 +10,7 @@
 		<link rel = "stylesheet" href = "home_style.css">
 
 		<script src = "drawYellowBand.js"></script> 
-		<script src = "welcomeCanvas.js"></script>
-		
+	
 		<!-- The three scripts below have been customized by me, original source: http://www.javascriptkit.com/script/script2/cubeslideshow.shtml --> 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="jkcubeslideshow.js"> </script>
@@ -42,13 +41,14 @@
 
 	<body> 
 		
-<!--		<p>&nbsp; </p> -->
-
-		<img class = "img" src = "./images/logo.png" alt = "Logo Image"> 
-		<p>&nbsp; </p>
-
+		<script src = "drawLogo.js"></script>
+		<div> 
+			<canvas id = "siteLogo" class = "siteLogoClass" height= "150%" width = "300%" style = "padding: 0; margin: auto; display: block; width: 200px;"></canvas>
+		</div>
+	
+		<p> &nbsp</p>	
 		<div id = "wrapper">
-			<canvas id = "drawMottoBackground" class = "canvasStyle"> 
+			<canvas id = "drawMottoBackground" class = "canvasStyle"> </canvas>
 		</div>
 
 		<h2 id= "h1" class = "text" > Bring movies to life! </h2>
@@ -63,21 +63,24 @@
 		<!--<p> &nbsp; </p> -->
 
 		<br/>
-		<!-- It doesn't display the div , look into the class example from ajax
-		
-		<div id = "content" class = "contentStyle"> 
-			<canvas id = "welcomeCanvas" width = "300" height = "400">		
-		</div>-->	
 
 		
 		<div id = "wrapper2"> 
-				<div class="jkcubeslideshow" id="cubeshow1"> </div>
-
-				<div id = "right">
-				 <p style = "color:red;"> Why is this text appearing here? I want to make it appear on the right </p>
-				</div>
-	
+				<div class="jkcubeslideshow" id="cubeshow1" <!-- do the styling here --> > </div>
 		</div>
+	
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<script src = "displayTrivia.js"></script>
+		<div id = "triviaDivId" style = "display:block; background-color:rgba(0,0,0,0.5); margin-left:20%; margin-right:20%">
+				 <p style = "margin:3%; color:red; font-size: 1.5em;">  Did you know? </p>
+				 <p id = "triviaP" style = "margin:3%; color:red; font-size: 1.5em;"> Trivia coming soon here... </p>
+		</div>
+
 
 	</body>
 
