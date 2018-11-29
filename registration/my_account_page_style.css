@@ -164,4 +164,34 @@ li a:hover{
 
 }
 
+.divFormStyle{
+	background-color:rgba(0,0,0,0.5);
+	margin-left:20%;
+	margin-right:60%;
+	display: none;
+}
 
+.buttonStyle{
+	width: 20%;
+	height: 35px;
+	border-radius: 20px;
+	margin:1%;
+	font-weight: bold;
+	display: block;
+	margin:0 auto;
+	color: white;
+	background-color: #2eb82e;
+}
+
+.buttonStyle:hover{
+	background-color: #66ff99;
+}
+
+
+.labelStyle{
+	color: red;
+}
+
+#formId{
+	margin:2%;
+}

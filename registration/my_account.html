@@ -8,7 +8,8 @@
 		<title>My Account</title>
 		<link rel = "stylesheet" href ="my_account_page_style.css"> </link>
 		<script src = "drawYellowBand.js"></script>
-		<script src = "displayTrivia.js"></script>	
+		<script src = "switchContent.js"></script>
+
 	</head>
 
 	<body>
@@ -34,7 +35,7 @@
 		
 		<br/>
 
-			 <div class = "loginbox">
+			 <div id = "loginDiv" class = "loginbox">
 				<img src="images/avatar_icon.png" class = "avatar">
 			
 				<br/>
@@ -52,10 +53,67 @@
 
 					<input type="submit" value="Login" class = "submitStyle">
 
-					<a href="#">Create new account</a>
+					<a id = "newAccA" href="#">Create new account</a>
+
 				</form>  
+
 			 </div>
 
+		<div id = "newAccFormDiv" class = "divFormStyle">
+
+			</br>
+
+			<input id = "goBackButton" type = "button" value = "Go Back" class = "buttonStyle">
+
+			<p> &nbsp; </p>
+
+			<form id = "formId" method = "post" action="#">
+
+
+				<label class = "labelStyle">  First Name:	
+					<input type = "text" placeholder = "Alan...">
+				</label>
+	
+				</br>
+				</br>
+
+
+				<label class = "labelStyle">Last Name:
+					<input type = "text" placeholder = "Turing...">
+				</label>
+				
+				</br>
+				</br>
+				<label class = "labelStyle">Your birthdate:
+                    <input type = "date">
+                </label>
+
+				</br>
+				</br>
+				<label class = "labelStyle">Telephone:     
+                    <input type = "tel" placeholder = "(####) ###-####"
+                        pattern = "\(\d{4}\) +\d{3}-\d{4}" required>
+                </label>
+
+				</br>
+				</br>
+		
+          		 <label class = "labelStyle"> Your email:
+                    	<input type = "email" placeholder = "name@domain.com"
+                        	required> 
+              	</label>
+
+				</br>
+				</br>
+
+				
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Clear">
+				
+			</form>
+
+			<p> &nbsp; </p>
+		<div>
 	</body>
 
 </html>
