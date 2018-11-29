@@ -8,7 +8,6 @@ body {
 canvas.canvasStyle{
 	width : 60%;
 	height : 5%;
-    //border: 1px solid yellow;
 	position: absolute;
 	z-index: -1;
 	padding-left: 20%;
@@ -17,7 +16,6 @@ canvas.canvasStyle{
 
 div.contentStyle{
 	width : 60%;
-	//height: 40%;
 	margin-left: 20%;
 	margin-right: 20%;
 	border: 2px solid yellow;
@@ -119,7 +117,6 @@ li a:hover{
 .loginbox input{
 	width: 60%;
 	margin-bottom: 15px;
-	//font-size: large;
 }
 
 .passwordStyle{

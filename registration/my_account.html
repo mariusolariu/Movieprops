@@ -4,9 +4,9 @@
 
 <html>
 	<head>
-		<meta charset = “utf-8”>
+		<meta charset = utf-8>
 		<title>My Account</title>
-		<link rel = "stylesheet" href ="my_account_page_style.css"> </link>
+		<link rel = "stylesheet" href ="my_account_page_style.css">
 		<script src = "drawYellowBand.js"></script>
 		<script src = "switchContent.js"></script>
 
@@ -15,7 +15,7 @@
 	<body>
 		<script src = "drawLogo.js"></script>
 		<div> 
-			<canvas id = "siteLogo" class = "siteLogoClass" height= "150%" width = "300%" style = "padding: 0; margin: auto; display: block; width: 200px;"></canvas>
+			<canvas id = "siteLogo" class = "siteLogoClass" style = "padding: 0; margin: auto; display: block; width: 200px;"></canvas>
 		</div>
 	
 		<p>&nbsp; </p>
@@ -36,20 +36,20 @@
 		<br/>
 
 			 <div id = "loginDiv" class = "loginbox">
-				<img src="images/avatar_icon.png" class = "avatar">
+				<img src="images/avatar_icon.png" class = "avatar" alt = "login icon">
 			
 				<br/>
 				<h1 class = "loginHeader"> Login </h1>
 	
 				<form>
 					<label>Username:
-						<input type = "text" name="" placeholder="Enter username...">
+						<input type = "text" name="username" placeholder="Enter username...">
 					</label>				
 
 					<label>Password:
-						<input type="password" name="" placeholder="Enter password.." class = "passwordStyle">
+						<input type="password" name="password" placeholder="Enter password.." class = "passwordStyle">
 					</label>
-					<br/>
+					<br>
 
 					<input type="submit" value="Login" class = "submitStyle">
 
@@ -61,59 +61,61 @@
 
 		<div id = "newAccFormDiv" class = "divFormStyle">
 
-			</br>
+			<br>
 
 			<input id = "goBackButton" type = "button" value = "Go Back" class = "buttonStyle">
 
 			<p> &nbsp; </p>
 
-			<form id = "formId" method = "post" action="#">
+			<form id = "formId" method = "post" action="processForm.php">
 
 
 				<label class = "labelStyle">  First Name:	
-					<input type = "text" placeholder = "Alan...">
+					<input name = "firstNameI" type = "text" placeholder = "Alan...">
 				</label>
 	
-				</br>
-				</br>
+				<br>
+				<br>
 
 
 				<label class = "labelStyle">Last Name:
-					<input type = "text" placeholder = "Turing...">
+					<input name = "lastNameI" type = "text" placeholder = "Turing...">
 				</label>
 				
-				</br>
-				</br>
+				<br>
+				<br>
 				<label class = "labelStyle">Your birthdate:
-                    <input type = "date">
+                    <input name = "birthdate" type = "date">
                 </label>
 
-				</br>
-				</br>
+				<br>
+				<br>
 				<label class = "labelStyle">Telephone:     
-                    <input type = "tel" placeholder = "(####) ###-####"
+                    <input name="telephone" type = "tel" placeholder = "(####) ###-####"
                         pattern = "\(\d{4}\) +\d{3}-\d{4}" required>
                 </label>
 
-				</br>
-				</br>
+				<br>
+				<br>
 		
           		 <label class = "labelStyle"> Your email:
-                    	<input type = "email" placeholder = "name@domain.com"
+                    	<input name = "email" type = "email" placeholder = "name@domain.com"
                         	required> 
               	</label>
 
-				</br>
-				</br>
+				<br>
+				<br>
 
 				
-				<input type = "submit" value = "Submit">
+				<input id = "submitB" type = "submit" value = "Submit">
 				<input type = "reset" value = "Clear">
 				
 			</form>
 
 			<p> &nbsp; </p>
-		<div>
+		</div>
+            
+        <h2 id = "thanksHeader" style="color:red;display: none;"></h2>
 	</body>
 
 </html>

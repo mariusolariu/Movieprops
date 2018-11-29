@@ -11,6 +11,7 @@ function main(){
 
 	$("newAccA").addEventListener("click", changeContent, false);
 	$("goBackButton").addEventListener("click", goBackMainPage, false);
+    $("submitB").addEventListener("click", sayThanks, false);
 }
 
 function changeContent(){
@@ -23,3 +24,7 @@ function goBackMainPage(){
 	newAccFormDiv.style.display = "none";
 }
 
+function sayThanks(){
+    $("thanksHeader").style.display = "block";
+    $("thanksHeader").innerHTML = "Thank you for submiting information!";
+}
